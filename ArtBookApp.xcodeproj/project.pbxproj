@@ -14,6 +14,7 @@
 		485320E524979A7100086A13 /* ArtBookApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 485320E324979A7100086A13 /* ArtBookApp.xcdatamodeld */; };
 		485320E724979A7200086A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485320E624979A7200086A13 /* Assets.xcassets */; };
 		485320EA24979A7200086A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485320E824979A7200086A13 /* LaunchScreen.storyboard */; };
+		485320F224979DF800086A13 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485320F124979DF800086A13 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		485320E624979A7200086A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		485320E924979A7200086A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		485320EB24979A7200086A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485320F124979DF800086A13 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				485320DC24979A7100086A13 /* SceneDelegate.swift */,
 				485320DE24979A7100086A13 /* ViewController.swift */,
 				485320E024979A7100086A13 /* Main.storyboard */,
+				485320F124979DF800086A13 /* DetailsVC.swift */,
 				485320E624979A7200086A13 /* Assets.xcassets */,
 				485320E824979A7200086A13 /* LaunchScreen.storyboard */,
 				485320EB24979A7200086A13 /* Info.plist */,
@@ -145,6 +148,7 @@
 				485320DB24979A7100086A13 /* AppDelegate.swift in Sources */,
 				485320E524979A7100086A13 /* ArtBookApp.xcdatamodeld in Sources */,
 				485320DD24979A7100086A13 /* SceneDelegate.swift in Sources */,
+				485320F224979DF800086A13 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
