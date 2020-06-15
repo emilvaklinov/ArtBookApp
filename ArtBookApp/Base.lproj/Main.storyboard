@@ -31,12 +31,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gau-tt-Qo4"/>
                     <connections>
+                        <outlet property="tableView" destination="UfK-KI-vpW" id="cq3-SB-CWp"/>
                         <segue destination="uU9-is-6Qh" kind="show" identifier="toDetailsVC" id="MbB-kh-Shm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="932" y="119"/>
         </scene>
         <!--DetailsVC-->
         <scene sceneID="FDa-bm-COE">
