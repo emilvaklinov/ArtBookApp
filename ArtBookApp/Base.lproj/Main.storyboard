@@ -47,7 +47,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="loy-aP-8h8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Select" translatesAutoresizingMaskIntoConstraints="NO" id="loy-aP-8h8">
                                 <rect key="frame" x="67" y="69" width="241" height="241"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="loy-aP-8h8" secondAttribute="height" multiplier="1:1" id="9CI-BL-xWt"/>
@@ -127,4 +127,7 @@
             <point key="canvasLocation" x="138.40000000000001" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Select" width="241" height="241"/>
+    </resources>
 </document>
