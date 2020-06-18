@@ -13,14 +13,31 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
-//    @IBOutlet weak var atristTextField: UITextField!
     @IBOutlet weak var artistFiled: UITextField!
-    
     @IBOutlet weak var yearTextField: UITextField!
     
+    var chosenPainting = ""
+    var chosenPaintingId : UUID?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if chosenPainting != "" {
+            //Core Data
+            // filter the results by id
+            let stringUUID = chosenPaintingId?.uuidString
+            
+            print(stringUUID)
+            
+            
+            
+        } else {
+            
+            nameTextField.text = ""
+            artistFiled.text = ""
+            yearTextField.text = ""
+            
+        }
 
         // Recognizers
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
