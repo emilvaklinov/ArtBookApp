@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     var nameArray = [String]()
     var idArray = [UUID]()
@@ -32,13 +32,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name(rawValue: "newData"), object: nil)
     }
-
-   @objc func getData() {
     
-    // Clearing the cashed data
-    nameArray.removeAll(keepingCapacity: false)
-    idArray.removeAll(keepingCapacity: false)
-    
+    @objc func getData() {
+        
+        // Clearing the cashed data
+        nameArray.removeAll(keepingCapacity: false)
+        idArray.removeAll(keepingCapacity: false)
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -47,19 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
-           let results = try context.fetch(fetchRequest)
-            
-            for result in results as! [NSManagedObject] {
-                if let name = result.value(forKey: "name") as? String {
-                    self.nameArray.append(name)
+            let results = try context.fetch(fetchRequest)
+            if results.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let name = result.value(forKey: "name") as? String {
+                        self.nameArray.append(name)
+                    }
+                    
+                    if let id = result.value(forKey: "id") as? UUID {
+                        self.idArray.append(id)
+                    }
+                    
+                    // Refresh the data
+                    self.tableView.reloadData()
                 }
-                
-                if let id = result.value(forKey: "id") as? UUID {
-                    self.idArray.append(id)
-                }
-                
-                // Refresh the data
-                self.tableView.reloadData()
             }
             
         } catch {
