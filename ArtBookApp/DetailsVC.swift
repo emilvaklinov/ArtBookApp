@@ -31,6 +31,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imageView.addGestureRecognizer(imageTapRecognizer)
     }
     
+    
     @objc func selectImage() {
        let picker = UIImagePickerController()
         picker.delegate = self
@@ -73,6 +74,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             print("Error")
         }
         
+        NotificationCenter.default.post(name: NSNotification.Name("newData"), object: nil);  self.navigationController?.popViewController(animated: true)
     }
     
 }
