@@ -98,7 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5jT-0u-nt5"/>
                     <connections>
-                        <outlet property="atristTextField" destination="puM-ah-4gy" id="NVZ-FL-3Tb"/>
+                        <outlet property="artistFiled" destination="puM-ah-4gy" id="wTC-N2-aaP"/>
                         <outlet property="imageView" destination="loy-aP-8h8" id="Reo-Gt-ieR"/>
                         <outlet property="nameTextField" destination="CbX-M3-NEj" id="Ozz-Eb-sud"/>
                         <outlet property="yearTextField" destination="rMB-gH-68B" id="94z-8m-jLW"/>
